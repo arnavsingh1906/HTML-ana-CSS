@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+
+<body>
+    <h1> HTML Registration Form</h1>
+    <br />
+
+    <form action="#">
+        <div>
+            <label for="username">username</label>
+            <input type="text" id="username" />
+            <label for="username">Enter your name</label>
+            <input type="text" id="username" value="vinod" readonly disabled />
+            <input type="text" maxlength="10">
+            <br />
+            <br />
+
+
+            <lable for="datemax">enter a date before 1980-01-01:</lable>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31" /><br /><br />
+
+
+            <lable for="datemin">enter a date before 1980-01-01:</lable>
+            <input type="date" id="datemin" name="datemin" min="2000-01-01" max="2022-01-02" /><br /><br />
+
+            <lable for="quantity">Quantity (between 1 and 5):</lable>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" /><br /><br />
+
+            <lable for="files">Select files:</lable>
+            <input type="file" id="files" name="files" multiple /><br><br>
+
+
+            <input type="email" maxlength="10" placeholder="demo@thapa.com" value="vinod" required>
+
+
+            <lable for="fname">First name:</lable>
+            <input type="text" id="fname" name="fname" autofocus autocomplete="off"><br>
+
+
+            <input list="browser" name="browser"> 
+            <datalist id="browser">
+               <option value="internet explorer">
+               <option value="firefox">
+               <option value="chrome">
+               <option value="opera">
+               <option value="safari">
+           </datalist>
+        </div>
+    </form>
+</body>
+
+</html>
